@@ -15,3 +15,6 @@ const tu : readonly [number,number] = [231,241]
 console.log(tu)
 // tu.push(345)
 console.log(tu)
+
+const dhakalatlong : readonly [number,number] = [23.8041, 90.4152]
+console.log(dhakalatlong)
