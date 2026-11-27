@@ -65,3 +65,18 @@ const user : {
     badges: ["abc", "def"]
 }
 console.log(user)
+
+const user2 : {
+    name : string
+    age : number
+    isActive : boolean
+    action : () => void
+    badges : string[]
+}={
+    name : "Humu",
+    age : 19,
+    isActive: true,
+    action : () => console.log("Hi"),
+    badges: ["abc", "def"]
+}
+console.log(user2)
