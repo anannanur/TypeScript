@@ -66,17 +66,51 @@ const user : {
 }
 console.log(user)
 
-const user2 : {
-    name : string
+// const user2 : {
+//     name : string
+//     age : number
+//     isActive : boolean
+//     action : () => void
+//     badges : string[]
+// }={
+//     name : "Humu",
+//     age : 19,
+//     isActive: true,
+//     action : () => console.log("Hi"),
+//     badges: ["abc", "def"]
+// }
+// console.log(user2)
+type UserName = string
+type address = {
+    street : string,
+    houseHoldingNo : number
+}
+type User= {
+    name : UserName
     age : number
     isActive : boolean
     action : () => void
     badges : string[]
-}={
+    address : address
+}
+const user2: User={
     name : "Humu",
     age : 19,
     isActive: true,
     action : () => console.log("Hi"),
-    badges: ["abc", "def"]
+    badges: ["abc", "def"],
+    address : {
+        street: "Elephant Road",
+        houseHoldingNo : 12
+    }
 }
 console.log(user2)
+
+interface User3 {
+    name : UserName
+    address : address
+    isActive : boolean
+    action: () => void
+    badges : string
+    age : number
+}
